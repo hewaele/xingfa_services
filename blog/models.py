@@ -29,7 +29,7 @@ from django.contrib.auth.models import User
 
 class user(models.Model):
     username = models.CharField(max_length=20)
-    headImg = models.ImageField(upload_to='PycharmProjects/django/xingfa_services/mysite/upload/')
+    headImg = models.ImageField(upload_to='./mysite/upload/')
 
 class Detection(models.Model):
     pass

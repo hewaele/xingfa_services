@@ -24,6 +24,7 @@ def index(request):
             for pi in p:
                 os.remove(image_path+pi)
             #保存在服务器
+            # User.Image = 'test.jpg'
             User.save()
             p = os.listdir(image_path)
 

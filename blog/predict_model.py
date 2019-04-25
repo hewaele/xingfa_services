@@ -8,9 +8,9 @@ image_path = '/home/hewaele/PycharmProjects/django/xingfa_services/mysite/upload
 
 lab_dic = {'0':'0', '1':'1', '2':'2', '3':'3', '4':'4', '5':'5', '6':'6', '7':'7',
                 '8':'8', '9':'9', '10':'A', '11':'B', '12':'C', '13':'D', '14':'E', '15':'F',
-                '16':'G', '17':'H', '18':'K', '19':'L', '20':'M', '21':'N', '22':'P',
-               '23':'Q', '24':'R', '25':'S', '26':'T', '27':'V', '28':'W', '29':'X', '30':'Y',
-               '31': 'Z'}
+                '16':'G', '17':'H', '18':'J', '19':'K', '20':'L', '21':'M', '22':'N', '23':'P',
+               '24':'Q', '25':'R', '26':'S', '27':'T', '28':'V', '29':'W', '30':'X', '31':'Y',
+               '32': 'Z'}
 
 
 objection = {"file": "./test_img/img2.JPG",
@@ -88,10 +88,10 @@ def cut_id(id, pos_s, pos_e):
         return id
 
 def load_modle_to_predict():
-    os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+    os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 
     sess = tf.Session()
-    with gfile.FastGFile('/home/hewaele/PycharmProjects/xingfa_frcnn/pb_module/module3.pb', 'rb') as f:
+    with gfile.FastGFile('/home/hewaele/PycharmProjects/xingfa_frcnn/pb_module/module7.pb', 'rb') as f:
         graph_def = tf.GraphDef()
         graph_def.ParseFromString(f.read())
         sess.graph.as_default()
@@ -109,8 +109,8 @@ def load_modle_to_predict():
 
     # 输出名字分别对应总结果， id, 位置， 概率
     op = sess.graph.get_tensor_by_name("fasterrcnn/rcnn/predict_result:0")
-    op2 = sess.graph.get_tensor_by_name("fasterrcnn/rcnn/rcnn_proposal_1/GatherV2_65:0")
-    op3 = sess.graph.get_tensor_by_name("fasterrcnn/rcnn/rcnn_proposal_1/GatherV2_64:0")
+    op2 = sess.graph.get_tensor_by_name("fasterrcnn/rcnn/rcnn_proposal_1/GatherV2_67:0")
+    op3 = sess.graph.get_tensor_by_name("fasterrcnn/rcnn/rcnn_proposal_1/GatherV2_66:0")
     op4 = sess.graph.get_tensor_by_name("fasterrcnn/rcnn/rcnn_proposal_1/TopKV2:0")
 
 
@@ -118,9 +118,9 @@ def load_modle_to_predict():
     p = os.listdir(image_path)
     image = Image.open(image_path+p[0])
 
-    ret = sess.run([op2, op3], feed_dict={input_x: np.array(image)})
+    ret = sess.run([op2, op3, op4], feed_dict={input_x: np.array(image)})
     id = get_id(ret[1], ret[0])
-
+    print(ret[2])
     return id
 
 if __name__ == "__main__":
