@@ -6,7 +6,7 @@
 2.使用DARTs算法对模型的RCNN部分网络进行构建
 3.基于Django搭建后台服务器
 # 演示说明：
-1.从test_img文件夹下下载测试用图片
+1.从[test_img](https://github.com/hewaele/xingfa_services/tree/master/test_img)文件夹下下载测试用图片
 2.进入web服务器：http://23e1c22801.imwork.net/
 3.将测试图片上传
 4：返回识别结果
