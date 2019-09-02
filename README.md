@@ -11,7 +11,7 @@
 3.将测试图片上传
 4：返回识别结果
 # 相关结果展示：
-![1]()
-![2]()
-![3]()
-![4]()
+![1](https://github.com/hewaele/xingfa_services/blob/master/show/2019-04-25152727.jpg)
+![2](https://github.com/hewaele/xingfa_services/blob/master/show/IMG_2050.JPG)
+![3](https://github.com/hewaele/xingfa_services/blob/master/show/IMG_2384.JPG)
+![4](https://github.com/hewaele/xingfa_services/blob/master/show/IMG_2674.JPG)
