@@ -11,7 +11,12 @@
 3.将测试图片上传  
 4：返回识别结果  
 # 数据集下载地址
-[kaggle/hewaele/Dataset_of_MoldID](https://www.kaggle.com/hewaele/xingfa-datast-test)
+[kaggle/hewaele/Dataset_of_MoldID](https://www.kaggle.com/hewaele/xingfa-datast-test)  
+包含三个文件夹：train,val,test  
+每个文件夹下包含训练图片及xml标记文件  
+train包含5102张模具图片  
+val包含1020张模具图片  
+test包含943张图片  
 # 相关结果展示：
 ![1](https://github.com/hewaele/xingfa_services/blob/master/show/2019-04-25152727.jpg)
 ![2](https://github.com/hewaele/xingfa_services/blob/master/show/IMG_2050.JPG)
