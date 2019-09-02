@@ -18,7 +18,4 @@ train包含5102张模具图片
 val包含1020张模具图片  
 test包含943张图片  
 # 相关结果展示：
-![1](https://github.com/hewaele/xingfa_services/blob/master/show/2019-04-25152727.jpg)
-![2](https://github.com/hewaele/xingfa_services/blob/master/show/IMG_2050.JPG)
-![3](https://github.com/hewaele/xingfa_services/blob/master/show/IMG_2384.JPG)
-![4](https://github.com/hewaele/xingfa_services/blob/master/show/IMG_2674.JPG)
+![](https://github.com/hewaele/xingfa_services/blob/master/show/result.jpg)
