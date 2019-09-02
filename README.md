@@ -9,7 +9,7 @@
 1.从[test_img](https://github.com/hewaele/xingfa_services/tree/master/test_img)文件夹下下载测试用图片  
 2.进入web服务器：http://23e1c22801.imwork.net/  
 3.将测试图片上传  
-4：返回识别结果  
+4.返回识别结果  
 # 数据集下载地址
 [kaggle/hewaele/Dataset_of_MoldID](https://www.kaggle.com/hewaele/xingfa-datast-test)  
 包含三个文件夹：train,val,test  
