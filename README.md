@@ -11,8 +11,7 @@
 3.将测试图片上传
 4：返回识别结果
 # 相关结果展示：
-
-/home/hewaele/PycharmProjects/Mask_RCNN/my_model/my_model_result/filte_box/2019-04-25152727.jpg
-/home/hewaele/PycharmProjects/Mask_RCNN/my_model/my_model_result/filte_box/IMG_2050.JPG
-/home/hewaele/PycharmProjects/Mask_RCNN/my_model/my_model_result/filte_box/IMG_2384.JPG
-/home/hewaele/PycharmProjects/Mask_RCNN/my_model/my_model_result/filte_box/IMG_2674.JPG
+![1]()
+![2]()
+![3]()
+![4]()
