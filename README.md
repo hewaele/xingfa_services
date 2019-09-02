@@ -10,6 +10,8 @@
 2.进入web服务器：http://23e1c22801.imwork.net/
 3.将测试图片上传
 4：返回识别结果
+# 数据集下载地址
+[kaggle/hewaele/Dataset_of_MoldID](https://www.kaggle.com/datasets)
 # 相关结果展示：
 ![1](https://github.com/hewaele/xingfa_services/blob/master/show/2019-04-25152727.jpg)
 ![2](https://github.com/hewaele/xingfa_services/blob/master/show/IMG_2050.JPG)
