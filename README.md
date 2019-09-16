@@ -11,7 +11,7 @@
 3.将测试图片上传  
 4.返回识别结果  
 # 数据集下载地址
-[kaggle/hewaele/Dataset_of_MoldID](https://www.kaggle.com/hewaele/xingfa-datast-test)  
+[kaggle/hewaele/Dataset_of_MoldID](https://www.kaggle.com/hewaele/dataset-of-moldid)  
 包含三个文件夹：train,val,test  
 每个文件夹下包含训练图片及xml标记文件  
 train包含5102张模具图片  
